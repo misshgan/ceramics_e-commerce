@@ -1,0 +1,152 @@
+/* HEADER BANNER */ 
+
+.header-banner {
+	padding: 1.7rem 0;
+	background: linear-gradient(180deg, #0085FF 0%, #FFE500 100%);
+
+	&__title {
+		padding: 0;
+		margin: 0;
+
+		color: $color-main;
+		text-align: center;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.118;
+	}
+}
+
+
+/* HEADER */ 
+
+.header {
+	border-bottom: 1px solid $color-main;
+	
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 2.8rem;
+		padding-bottom: 2.8rem;
+	}
+
+	&__group {
+		display: flex;
+		align-items: center;
+	}
+
+	&__icon {
+		&:not(:first-child) {
+			margin-left: 4rem;
+		}
+	}
+	&__logo {}
+
+	&__cart {
+		position: relative;
+		margin-left: 4rem;
+	}
+
+	&__cart-amount {
+		position: absolute;
+		top: -4px;
+		right: -10px;
+		width: 19px;
+		height: 19px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		color: #fff;
+		font-size: 1.2rem;
+		font-weight: 400;
+
+		background: $color-main;
+		border-radius: 10px;
+	}
+}
+
+/* NAVIGATION */
+
+.nav {
+	display: flex;
+	justify-content: center;
+	padding: 4rem 0;
+
+	&__item {
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.118;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&:not(:first-child) {
+			margin-left: 9rem;
+		}
+	}
+
+	&__dropdown-item {
+		cursor: pointer;
+
+		display: flex;
+		align-items: center;
+	}
+}
+
+/* SLIDER */ 
+
+.slider {
+	position: relative;
+
+	&__card {
+		background-image: url('/assets/images/slider-card-image.png');
+		background-position:center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		padding: 4rem 5rem 7.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 40rem;
+	}
+	&__subtitle {
+		width: 100%;
+
+		color: #FFF;
+		font-size: 2.2rem;
+		font-weight: 600;
+		line-height: 1.366;
+		text-transform: uppercase;
+		padding: 0;
+		margin: 0;
+	}
+	&__title {
+		flex-grow: 1;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		color: #FFF;
+		font-size: 3rem;
+		font-weight: 400;
+		line-height: 1,86;
+		text-transform: uppercase;
+	}
+	&__previous {
+		position: absolute;
+		left: 1rem;
+		top: calc(50% - 15px);
+
+		cursor: pointer;
+	}
+	&__next {
+		position: absolute;
+		right: 1rem;
+		top: calc(50% - 15px);
+
+		cursor: pointer;
+	}
+}
