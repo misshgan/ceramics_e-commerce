@@ -39,6 +39,8 @@
 		&:not(:first-child) {
 			margin-left: 4rem;
 		}
+
+		cursor: pointer;
 	}
 	&__logo {}
 
