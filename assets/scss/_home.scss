@@ -1,0 +1,282 @@
+/* CATEGORIES */
+
+.home-categories {
+	margin-top: 12rem;
+
+	.container {
+	}
+	&__title {
+		margin: 0;
+
+		color: $color-main;
+		font-size: 4rem;
+		font-weight: 100;
+	}
+	&__header {
+		margin-top: 8.5rem;
+		margin-bottom: 6.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__header-category {
+		color: $color-secondary;
+		font-size: 2.2rem;
+		font-weight: 400;
+		line-height: 1.36;
+
+		cursor: pointer;
+		transition: all .3s;
+
+		&.active {
+			color: $color-main;
+			padding: 1.6rem 3rem;
+			border: 1px solid $color-main;
+			border-radius: 8px;
+			margin: 0 -3rem;
+		}
+
+		&:hover {
+			color: $color-main;
+		}
+	}
+}
+
+/* TOP SALES */ 
+
+.home-top-sales {
+	margin-top: 12rem;
+
+	.container {
+	}
+	&__header {
+		margin-bottom: 10rem;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__title {
+		margin: 0;
+	
+		color: $color-main;
+		font-size: 40px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	&__progress {
+		margin-top: 4rem;
+		width: 100%;
+		height: 3px;
+		background: $color-secondary;
+	}
+	.button-white {
+	}
+	&__cards {
+	}
+	.small-cards {
+	}
+}
+
+/* DISCOUNTS */ 
+
+.home-discounts {
+	margin-top: 12rem;
+
+	.container {
+	}
+	&__header {
+		margin-bottom: 10rem;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__title {
+		margin: 0;
+	
+		color: $color-main;
+		font-size: 40px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.button-white {
+	}
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.default-card {
+		max-width: 100%;
+		margin-right: 0;
+	}
+	&__column-thin {
+		width: 24.18%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__column-wide {
+		width: 45.16%;
+	}
+}
+
+/* NEW ITEMS */ 
+
+.home-new-items {
+	margin-top: 12rem;
+
+	.container {
+	}
+	&__header {
+		margin-bottom: 10rem;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__title {
+		margin: 0;
+	
+		color: $color-main;
+		font-size: 40px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.button-white {
+	}
+	&__progress {
+		margin-top: 4rem;
+		width: 100%;
+		height: 3px;
+		background: $color-secondary;
+	}
+}
+
+/* ABOUT US */
+
+.home-about {
+	margin-top: 12rem;
+
+	.container {
+	}
+	&__header {
+		margin-bottom: 10rem;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__title {
+		margin: 0;
+	
+		color: $color-main;
+		font-size: 40px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__image {
+		width: 66.7%;
+	}
+	&__top-text {
+		width: 30.75%;
+		padding-right: 1.8rem;
+	}
+	&__text-title {
+		margin: 0;
+		margin-bottom: 4rem;
+
+		color: $color-main;
+		font-size: 25px;
+		font-weight: 600;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+	&__text-description {
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.18;
+	}
+
+	&__facts {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__fact {
+		width: 33.33333%;
+		padding: 4rem 0 2rem 2rem;
+
+		border: 1px solid $color-main;
+	}
+	&__fact-title {
+		margin: 0;
+		margin-bottom: 1.5rem;
+
+		color: $color-main;
+		font-size: 2.2rem;
+		font-weight: 400;
+		line-height: 1.36;
+		text-transform: uppercase;
+	}
+	&__fact-description {
+		margin: 0;
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.18;
+	}
+}
+
+/* SEO TEXT */
+
+.home-seo-text {
+	margin-top: 12rem;
+	margin-bottom: 14.5rem;
+
+	.container {
+	}
+	&__title {
+		margin-bottom: 5rem;
+
+		color: $color-main;
+		font-size: 4rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	&__description {
+		margin-bottom: 5rem;
+
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.18;
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.18;
+		text-decoration: none;
+
+		img {
+			margin-left: 1rem;
+			width: 8px;
+		}
+	}
+}
+
+
+
+
+
+

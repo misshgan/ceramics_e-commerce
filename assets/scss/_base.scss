@@ -83,3 +83,118 @@ $color-secondary: #BDBDBD;
 	color: transparent;
 	cursor: default;
 }
+
+/* SMALL CARDS */ 
+
+.default-cards {
+	display: flex;
+	justify-content: space-between;	
+	position: relative;
+
+	&__next {
+		z-index: 5;
+
+		position: absolute;
+		top: calc(50% - 15px);
+		right: 1rem;
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	&__previous {
+		z-index: 5;
+		
+		position: absolute;
+		top: calc(50% - 15px);
+		left: 1rem;
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+}
+
+.default-card {
+	max-width: 24.2%;
+	position: relative;
+
+	&:not(:last-child) {
+		margin-right: 15px;
+	}
+
+	&__sale-badge {
+		position: absolute;
+		top: 2rem;
+		left: 2rem;
+
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.18;
+		text-transform: uppercase;
+
+		padding: 0.7rem 1.7rem;
+		border-radius: 50px;
+		border: 1px solid $color-main;
+		background: #FFF;
+	}
+
+	&__img {
+		width: 100%;
+		object-fit: cover;
+	}
+	&__info {
+		border: 1px solid $color-main;
+		padding: 2rem;
+		margin-top: -3px;
+
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		margin-bottom: 1rem;
+
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.18;
+		text-transform: capitalize;
+	}
+	&__price {
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 600;
+		line-height: 1.18;
+		text-transform: capitalize;
+	}
+}
+.default-info-card {
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		margin: 0;
+		margin-bottom: 4rem;
+
+		color: $color-main;
+		font-size: 2.5rem;
+		font-weight: 600;
+		line-height: 1.55;
+	}
+	&__description {
+		max-width: 26rem;
+
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.18;
+	}
+
+	.button-white {
+		margin-top: auto;
+	}
+}
