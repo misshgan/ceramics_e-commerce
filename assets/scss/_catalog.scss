@@ -1,0 +1,198 @@
+.catalog-body {
+	padding: 10rem 0 12rem;
+
+	&__title {
+		margin-bottom: 4rem;
+
+		text-align: center;
+		color: $color-main;
+		font-size: 40px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	.filter {
+		
+		&__buttons {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			margin-bottom: 3.5rem;
+		}
+
+		&__labels {
+			display: flex;
+			align-items: center;
+			padding: 0.8rem 0;
+
+			border-bottom: 1px solid $color-secondary;
+			border-top: 1px solid $color-secondary;
+		}
+
+		&__label {
+			display: flex;
+			align-items: center;
+
+			padding: .8rem 1.4rem;
+
+			color: $color-main;
+			font-size: 1.8rem;
+			font-weight: 400;
+
+			border-radius: 30px;
+			border: 1px solid $color-main;
+
+			img {
+				margin-left: 1rem;
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+
+			&:not(:last-child) {
+				margin-right: 2rem;
+			}
+		}
+
+		&__item {
+			position: relative;
+		}
+		&__item-header {
+			padding: 1.6rem 4rem;
+			border-radius: 8px;
+			border: 1px solid $color-main;
+
+			display: flex;
+			align-items: center;
+
+			color: $color-main;
+			font-size: 1.8rem;
+			font-weight: 400;
+
+			cursor: pointer;
+
+			img {
+				margin-left: 1rem;
+			}
+		}
+
+		&__item-body {
+			display: flex;
+			flex-direction: column;
+			padding: 1rem;
+
+			position: absolute;
+			top: calc(100% + 2px);
+			left: 0;
+			width: 100%;
+
+			border-radius: 8px;
+			border: 1px solid $color-main;
+			background: #fff;
+
+			label {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				&:not(:last-child) {
+					margin-bottom: 1rem;
+				}
+			}
+
+			div {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				&:not(:last-child) {
+					margin-bottom: 1rem;
+				}
+			}
+		}
+		.filter-color-body {
+			display: none;  // *************************** Disabled //
+		}
+
+		.filter-material-body {
+			display: none;  // *************************** Disabled //
+
+		}
+
+		.filter-price-body {
+			display: none;  // *************************** Disabled //
+
+			width: 32.5rem;
+			left: -9rem;
+
+			padding: 2rem 2rem 1.5rem;
+		}
+
+		.filter-sort-body {
+			display: none;  // *************************** Disabled //
+
+			.filter__item-title {
+
+				&.active {
+					font-weight: 600;
+				}
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+				&:not(:last-child) {
+					margin-bottom: 1rem;
+				}
+			}
+		}
+
+		&__item-scale {
+			height: 1px;
+			width: 100%;
+			background: $color-secondary;
+			margin-bottom: 1rem;
+		}
+		&__price {
+			color: $color-main;
+			font-size: 1.6rem;
+			font-weight: 400;
+		}
+		
+		&__item-title {
+			color: $color-main;
+			font-size: 1.6rem;
+			font-weight: 400;
+			cursor: pointer;
+		}
+	}
+
+	&__found {
+		margin: 3.5rem 0 4rem;
+
+		color: $color-secondary;
+		font-size: 1.8rem;
+		font-weight: 400;
+	}
+
+	&__cards {
+		flex-wrap: wrap;
+		row-gap: 2rem;
+
+		.default-card {
+			width: 32%;
+			max-width: unset;
+			margin: 0;
+		}
+		.default-card__img {
+		}
+		.default-card__info {
+		}
+		.default-card__title {
+		}
+		.default-card__price {
+		}
+
+	}
+}
+
