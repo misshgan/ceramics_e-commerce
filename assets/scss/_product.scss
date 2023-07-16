@@ -1,0 +1,309 @@
+.product {
+	padding-bottom: 14rem;
+
+	.container {
+		
+	}
+
+	&__main {
+		display: grid;
+		grid-template-columns: 8.06% 41.93% 41.93%;
+		justify-content: space-between;
+		height: 52rem;
+	}
+	&__miniatures {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+
+		max-height: 52rem;
+	}
+	&__miniature {
+		width: 100%;
+		min-height: 10rem;
+		object-fit: cover;
+		overflow: hidden;
+
+		border-radius: 8px;
+		border: 1px solid $color-main;
+
+		filter: contrast(0.35);
+		transition: all .3s;
+		cursor: pointer;
+
+		&:hover {
+			filter: none;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+
+		&.active {
+			filter: none;
+		}
+	}
+	&__image {
+		border-radius: 8px;
+		overflow: hidden;
+		border: 1px solid $color-main;
+		height: 52rem;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__card {
+	}
+
+	&__description {
+		margin: 12rem 0 10rem;
+	}
+	&__description-header {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid $color-secondary;
+	}
+	&__description-title {
+		color: $color-main;
+		font-size: 2.5rem;
+		font-weight: 400;
+		text-transform: uppercase;
+
+		position: relative;
+		
+		&:not(:last-child) {
+			margin-right: 6rem;
+		}
+
+		
+	}
+	&__description-title.active {
+		&::after {
+			content: '';
+			position: absolute;
+			top: calc(100% + 2rem);
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: $color-main;
+		}
+	}
+	&__description-body {
+		margin-top: 4rem;
+
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 400;
+	}
+
+	&__cards {
+
+	}
+
+	&__cards-header {
+		margin-bottom: 8.4rem;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__cards-title {
+		margin: 0;
+	
+		color: $color-main;
+		font-size: 40px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+}
+
+
+.product-card {
+	display: flex;
+	flex-direction: column;
+	padding: 4rem;
+
+	border-radius: 8px;
+	border: 1px solid $color-main;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+	height: 52rem;
+
+
+	&__header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+
+		margin-bottom: 3rem;
+	}
+	&__title {
+		color: $color-main;
+		font-size: 2.5rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&__price {
+		margin-left: auto;
+
+		color: $color-main;
+		font-size: 3rem;
+		font-weight: 600;
+	}
+	&__number {
+		width: 100%;
+		margin-top: 1rem;
+
+		color: $color-secondary;
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+	&__color {
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 600;
+
+		div {
+			margin-top: 1rem;
+			display: flex;
+		}
+	}
+	&__color-item {
+		width: 1.6rem;
+		height: 1.6rem;
+		border: 2px solid transparent;
+
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+
+		&.active {
+			border-color: $color-main;
+		}
+	}
+	&__size {
+		margin: 2rem 0 4rem;
+
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 600;
+
+		div {
+			display: flex;
+			align-self: center;
+
+			margin: 1rem 0;
+
+			.product-card__size-item {
+				color: $color-main;
+				font-size: 2.1rem;
+				font-weight: 400;
+		
+				display: flex;
+				align-items: center;
+				justify-content: center;
+		
+				width: 4rem;
+				height: 3rem;
+				border-radius: 8px;
+				border: 1px solid $color-main;
+		
+				transition: all .3s;
+				cursor: pointer;
+		
+				&.active, &:hover {
+					color: #fff;
+					background: $color-main;
+				}
+		
+				&:not(:last-child) {
+					margin-right: 1rem;
+				}
+			}
+		}
+
+		span {
+			color: $color-secondary;
+			font-size: 1.6rem;
+			font-weight: 400;
+		}
+	}
+	
+	&__amount {
+		margin-bottom: 4rem;
+
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 600;
+
+		div {
+			margin-top: 1rem;
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__amount-less, &__amount-more {
+		position: relative;
+		margin: 0;
+		width: 40px;
+		height: 30px;
+		font-weight: 400;
+
+		border: 1px solid $color-main;
+		border-radius: 8px;
+
+		transition: all .3s;
+		cursor: pointer;
+
+		&:hover {
+			color: #fff;
+			background: $color-main;
+		}
+	}
+
+	&__amount-less {
+		&::after {
+			position: absolute;
+			content: '-';
+			height: 1px;
+			font-size: 38px;
+			top: -35%;
+			left: 32%;
+		}
+	}
+	&__amount-more {
+		&::after {
+			position: absolute;
+			content: '+';
+			height: 1px;
+			font-size: 38px;
+			top: -26%;
+			left: 31%;
+		}
+	}
+	&__amount-counter {
+		margin: 0 1rem;
+
+		color: $color-main;
+		font-size: 2.1rem;
+		font-weight: 400;
+	}
+	&__footer {
+
+		display: flex;
+		align-items: center;
+	}
+	.button-dark {
+		margin-right: 3rem;
+	}
+	.button-white {
+	}
+}
+
+

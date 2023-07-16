@@ -79,10 +79,51 @@ $color-secondary: #BDBDBD;
 	}
 }
 
+.button-white.heart {
+	padding: 0;
+	width: 8.5rem;
+	height: 5.4rem;
+
+	background-image: url(/assets/images/icons/ic_heart.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&:hover {
+		background: #FFF;
+		background-image: url(/assets/images/icons/heart-fill.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
 .button-white.disabled {
 	background: $color-secondary;
 	color: transparent;
 	cursor: default;
+}
+
+.button-dark {
+	padding: 1.6rem 3rem;
+	border-radius: 8px;
+	border: 1px solid $color-main;
+	background: $color-main;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	width: max-content;
+
+	color: #FFF ;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.118;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	transition: all .3s;
+	cursor: pointer;
+
+	&:hover {
+		color: $color-main;
+		background: #FFF;
+	}
 }
 
 /* CARDS */ 
