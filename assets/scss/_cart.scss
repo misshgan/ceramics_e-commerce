@@ -1,0 +1,115 @@
+.cart {
+	padding-bottom: 14rem;
+
+	.container {
+		
+	}
+	&__title {
+		width: 100%;
+		margin-bottom: 10rem;
+
+		text-align: center;
+		color: $color-main;
+		font-size: 4rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&__left {
+		width: 68.54%;
+	}
+	&__right {
+		width: 28.22%;
+		padding: 4rem 2rem 2rem;
+		border: 1px solid $color-main;
+	}
+	&__promocode {
+		display: flex;
+		flex-direction: column;
+	}
+	&__promocode-title {
+		margin-bottom: 2rem;
+
+		color: $color-main;
+		font-size: 1.6rem;
+		font-weight: 400;
+		text-transform: capitalize;
+	}
+	&__promocode-input-group {
+		display: flex;
+
+	}
+	&__promocode-input {
+		padding: 0.8rem 3.4rem 0.8rem 1.4rem;
+		margin-bottom: 1rem;
+		border: 1px solid $color-secondary;
+
+		color: $color-main;
+		font-size: 1.6rem;
+		font-weight: 400;
+
+		&:active, &:focus {
+			outline: 1px solid $color-main;
+		}
+
+		&::placeholder {
+			color: $color-secondary;
+			font-size: 1.6rem;
+			font-weight: 400;
+			text-transform: capitalize;
+		}
+	}
+	&__promocode-send {
+		margin-left: -1px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 3.4rem;
+		height: 3.64rem;
+
+		border: 1px solid $color-secondary;
+
+		cursor: pointer;
+	}
+	&__promocode-success {
+		margin-bottom: 2rem;
+
+		color: $color-secondary;
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+	&__discount {
+		padding: 2rem 0;
+		border-top: 1px solid $color-main;
+		border-bottom: 1px solid $color-main;
+	}
+	&__discount-item {
+		display: flex;
+		justify-content: space-between;
+
+		color: $color-main;
+		font-size: 1.6rem;
+		font-weight: 400;
+
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
+	&__discount-price {
+		font-weight: 600;
+	}
+	&__sum {
+		margin: 2rem 0 4rem;
+	}
+
+	.button-dark {
+		display: block;
+		margin: 0 auto;
+	}
+}

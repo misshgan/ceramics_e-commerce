@@ -244,55 +244,7 @@
 
 		div {
 			margin-top: 1rem;
-			display: flex;
-			align-items: center;
 		}
-	}
-	&__amount-less, &__amount-more {
-		position: relative;
-		margin: 0;
-		width: 40px;
-		height: 30px;
-		font-weight: 400;
-
-		border: 1px solid $color-main;
-		border-radius: 8px;
-
-		transition: all .3s;
-		cursor: pointer;
-
-		&:hover {
-			color: #fff;
-			background: $color-main;
-		}
-	}
-
-	&__amount-less {
-		&::after {
-			position: absolute;
-			content: '-';
-			height: 1px;
-			font-size: 38px;
-			top: -35%;
-			left: 32%;
-		}
-	}
-	&__amount-more {
-		&::after {
-			position: absolute;
-			content: '+';
-			height: 1px;
-			font-size: 38px;
-			top: -26%;
-			left: 31%;
-		}
-	}
-	&__amount-counter {
-		margin: 0 1rem;
-
-		color: $color-main;
-		font-size: 2.1rem;
-		font-weight: 400;
 	}
 	&__footer {
 
