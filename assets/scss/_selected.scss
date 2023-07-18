@@ -1,0 +1,50 @@
+.selected {
+	padding: 5rem 0 14rem;
+
+	.container {
+	}
+	&__header {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		margin-left: auto;
+
+		margin-bottom: 10rem;
+		width: 57%;
+	}
+	&__title {
+		margin: 0;
+
+		color: $color-main;
+		font-size: 4rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	&__clear-all {
+		display: flex;
+		align-items: center;
+
+		color: $color-secondary;
+		font-size: 1.8rem;
+		font-weight: 400;
+
+		img {
+			margin-left: 1rem;
+		}
+	}
+	&__cards {
+		display: flex;
+	}
+	.default-card {
+		max-width: unset;
+		width: 32%;
+	}
+	.default-card__img {
+	}
+	.default-card__info {
+	}
+	.default-card__title {
+	}
+	.default-card__price {
+	}
+}
