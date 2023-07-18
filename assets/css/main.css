@@ -15,7 +15,7 @@ body {
 /* COLORS */
 /* BOUNDING CONTAINER */
 .container {
-  max-width: 144rem;
+  max-width: 130rem;
   padding-left: 3rem;
   padding-right: 3rem;
   margin: 0 auto;
@@ -1816,4 +1816,41 @@ input[type=checkbox]:disabled {
 }
 .gratitude .button-white {
   margin: 0 auto;
+}
+
+.page-404 {
+  padding: 5rem;
+  overflow: hidden;
+}
+.page-404 .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-404__text {
+  display: flex;
+  flex-direction: column;
+  width: 40.32%;
+  text-align: center;
+}
+.page-404__title {
+  margin: 0;
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+  color: #171819;
+  font-size: 30rem;
+  font-weight: 100;
+  line-height: 1;
+}
+.page-404__subtitle {
+  margin-bottom: 5rem;
+  color: #171819;
+  font-size: 4rem;
+  font-weight: 100;
+}
+.page-404 .button-dark {
+  margin: 0 auto;
+}
+.page-404__image {
+  width: 64.51%;
 }
