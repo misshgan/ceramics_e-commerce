@@ -1775,3 +1775,45 @@ input[type=checkbox]:disabled {
 .login-form__socials a:not(:last-child) {
   margin-right: 3rem;
 }
+
+.gratitude {
+  padding: 4rem 0 14rem;
+}
+.gratitude__image {
+  margin: 0 auto;
+  width: 84.67%;
+  height: 70rem;
+  background-image: url(/assets/images/body.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gratitude__text {
+  text-align: center;
+}
+.gratitude__order-number {
+  margin-bottom: 4rem;
+  color: #FFF;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.gratitude__title {
+  margin-bottom: 4rem;
+  color: #FFF;
+  font-size: 5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.gratitude__subtitle {
+  margin-bottom: 5rem;
+  color: #FFF;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.gratitude .button-white {
+  margin: 0 auto;
+}

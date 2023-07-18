@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<title>Document</title>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__group">
+				<img class="header__icon" src="assets/images/icons/ic_menu.svg" alt="menu icon">
+				<div class="header__search">
+					<img class="header__icon" src="assets/images/icons/ic_search.svg" alt="search icon">
+					<input type="text" placeholder="Пошук по назві товару">
+				</div>
+			</div>
+			<img class="header__logo" src="assets/images/icons/LOGO.svg" alt="logo image">
+			<div class="header__group">
+				<img class="header__icon" src="assets/images/icons/ic_heart.svg" alt="heart icon">
+				<img class="header__icon" src="assets/images/icons/ic_person.svg" alt="person icon">
+				<div class="header__cart">
+					<img class="header__icon" src="assets/images/icons/ic_cart.svg" alt="cart icon">
+					<span id="header-cart-amount" class="header__cart-amount">1</span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="search-results">
+		<div class="container">
+			<div class="search-results__card">
+				<img src="assets/images/home/img_product_1.png" alt="product image" class="search-results__card-img">
+				<div class="search-results__card-text">
+					<h4 class="search-results__card-title">Назва товару</h4>
+					<span class="search-results__card-price">1 200 грн</span>
+				</div>
+			</div>
+			<div class="search-results__card">
+				<img src="assets/images/home/img_product_1.png" alt="product image" class="search-results__card-img">
+				<div class="search-results__card-text">
+					<h4 class="search-results__card-title">Назва товару</h4>
+					<span class="search-results__card-price">1 200 грн</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="burger-menu">
+		<div class="burger-menu__item dropdown-menu">
+			<div class="dropdown-menu__title">Каталог <img src="assets/images/icons/arrow_down.svg" alt="arrow down icon"></div>
+			<div class="dropdown-menu__body container">
+				<div class="dropdown-menu__column">
+					<h3 class="dropdown-menu__column-title">Тарілки</h3>
+					<a href="#" class="dropdown-menu__column-item">Десертні</a>
+					<a href="#" class="dropdown-menu__column-item">Салатні</a>
+					<a href="#" class="dropdown-menu__column-item">Супові</a>
+					<a href="#" class="dropdown-menu__column-item">Класичні</a>
+					<a href="#" class="dropdown-menu__column-item">Мінімалістичні</a>
+					<a href="#" class="dropdown-menu__column-item">Сучасні</a>
+				</div>
+				<div class="dropdown-menu__column">
+					<h3 class="dropdown-menu__column-title">Чашки</h3>
+					<a href="#" class="dropdown-menu__column-item">Порцеляна</a>
+					<a href="#" class="dropdown-menu__column-item">Кераміка</a>
+					<a href="#" class="dropdown-menu__column-item">Кришталеві</a>
+					<a href="#" class="dropdown-menu__column-item">Кавові</a>
+					<a href="#" class="dropdown-menu__column-item">Для чаю</a>
+					<a href="#" class="dropdown-menu__column-item">Для капучино</a>
+					<a href="#" class="dropdown-menu__column-item">Для еспресо</a>
+				</div>
+				<div class="dropdown-menu__column">
+					<h3 class="dropdown-menu__column-title">Миски</h3>
+					<a href="#" class="dropdown-menu__column-item">Супові</a>
+					<a href="#" class="dropdown-menu__column-item">Салатні</a>
+					<a href="#" class="dropdown-menu__column-item">Десертні</a>
+					<a href="#" class="dropdown-menu__column-item">Для паст</a>
+					<a href="#" class="dropdown-menu__column-item">Для закусок</a>
+				</div>
+				<div class="dropdown-menu__column">
+					<h3 class="dropdown-menu__column-title">Горщики</h3>
+					<a href="#" class="dropdown-menu__column-item">Для декору</a>
+					<a href="#" class="dropdown-menu__column-item">Для саду</a>
+					<a href="#" class="dropdown-menu__column-item">Для орхідей</a>
+					<a href="#" class="dropdown-menu__column-item">Керамічні</a>
+					<a href="#" class="dropdown-menu__column-item">Скляні</a>
+					<a href="#" class="dropdown-menu__column-item">Глиняні</a>
+				</div>
+				<div class="dropdown-menu__column">
+					<h3 class="dropdown-menu__column-title">Вази</h3>
+					<a href="#" class="dropdown-menu__column-item">Керамічні</a>
+					<a href="#" class="dropdown-menu__column-item">Порцелянові</a>
+					<a href="#" class="dropdown-menu__column-item">Скляні</a>
+					<a href="#" class="dropdown-menu__column-item">Круглі</a>
+					<a href="#" class="dropdown-menu__column-item">Овальні</a>
+					<a href="#" class="dropdown-menu__column-item">Асиметричні</a>
+				</div>
+				<div class="dropdown-menu__column">
+					<h3 class="dropdown-menu__column-title">Набори</h3>
+					<a href="#" class="dropdown-menu__column-item">Тарілки + чашки</a>
+					<a href="#" class="dropdown-menu__column-item">Склянки</a>
+					<a href="#" class="dropdown-menu__column-item">Для чаю</a>
+					<a href="#" class="dropdown-menu__column-item">Сервірування</a>
+				</div>
+				<div class="dropdown-menu__column">
+					<h3 class="dropdown-menu__column-title">Глечики</h3>
+					<a href="#" class="dropdown-menu__column-item">Керамічні</a>
+					<a href="#" class="dropdown-menu__column-item">Порцелянові</a>
+					<a href="#" class="dropdown-menu__column-item">Скляні</a>
+					<a href="#" class="dropdown-menu__column-item">Круглі</a>
+					<a href="#" class="dropdown-menu__column-item">Овальні</a>
+					<a href="#" class="dropdown-menu__column-item">Асиметричні</a>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="burger-menu__item">Акції</a>
+		<a href="#" class="burger-menu__item">Новинки</a>
+		<a href="#" class="burger-menu__item">Топ-продукти</a>
+		<a href="#" class="burger-menu__item">FAQ</a>
+		<a href="#" class="burger-menu__item">Terms Conditions</a>
+	</div>
+
+	<div class="gratitude">
+		<div class="container">
+			<div class="gratitude__image">
+				<div class="gratitude__text">
+					<p class="gratitude__order-number">Ваше замовлення №000000</p>
+					<h1 class="gratitude__title">Дякуємо, що обрали нас !</h1>
+					<p class="gratitude__subtitle">
+						Наш менеджер зв’яжеться з Вами для уточнення деталей.
+					</p>
+					<a href="#" class="button-white">До каталогу</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__body">
+				<div class="footer__contacts">
+					<img src="assets/images/icons/LOGO.svg" alt="logo image" class="footer__logo">
+					<span class="footer__contacts-item">(000) -00 -00 -000</span>
+					<span class="footer__contacts-item">(000) -00 -00 -000</span>
+					<span class="footer__contacts-item">(000) -00 -00 -000</span>
+					<span class="footer__contacts-item">email.email@gmail.com</span>
+					<div class="footer__contacts-socials">
+						<img src="assets/images/icons/facebook.svg" alt="facebook icon" class="footer__contacts-social">
+						<img src="assets/images/icons/inst.svg" alt="instagram icon" class="footer__contacts-social">
+						<img src="assets/images/icons/tik-tok.svg" alt="tik-tok icon" class="footer__contacts-social">
+					</div>
+				</div>
+				<div class="footer__catalog">
+					<h4 class="footer__catalog-title">Каталог</h4>
+					<div class="footer__catalog-items">
+						<a href="#" class="footer__catalog-item">Тарілки</a>
+						<a href="#" class="footer__catalog-item">Чашки</a>
+						<a href="#" class="footer__catalog-item">Вази</a>
+						<a href="#" class="footer__catalog-item">Салатниці</a>
+						<a href="#" class="footer__catalog-item">Миски</a>
+						<a href="#" class="footer__catalog-item">Глечики</a>
+						<a href="#" class="footer__catalog-item">Склянки</a>
+						<a href="#" class="footer__catalog-item">Горщики</a>
+						<a href="#" class="footer__catalog-item">Обідні набори</a>
+					</div>
+				</div>
+				<div class="footer__links">
+					<a href="#" class="footer__link">Про нас</a>
+					<a href="#" class="footer__link">FAQ</a>
+					<a href="#" class="footer__link">Terms Conditions</a>
+					<a href="#" class="footer__link">Обране</a>
+					<a href="#" class="footer__link">Особистий кабінет</a>
+				</div>
+				<div class="footer__payment">
+					<h4 class="footer__payment-title">Способи оплати</h4>
+					<div class="footer__payment-icons">
+						<img src="assets/images/icons/visa.svg" alt="visa icon" class="footer__payment-icon">
+						<img src="assets/images/icons/master-card.svg" alt="mastercard icon" class="footer__payment-icon">
+						<img src="assets/images/icons/privat24.svg" alt="privat24 icon" class="footer__payment-icon">
+						<img src="assets/images/icons/liqpay.svg" alt="liqpay icon" class="footer__payment-icon">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
