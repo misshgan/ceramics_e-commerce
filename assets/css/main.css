@@ -423,6 +423,17 @@ input[type=checkbox]:disabled {
   display: flex;
   justify-content: space-between;
 }
+.default-form__title {
+  margin: 0 0 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #171819;
+  color: #171819;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.default-form__title:not(:first-child) {
+  margin: 3rem 0 3.5rem;
+}
 .default-form__item {
   display: flex;
   flex-direction: column;
@@ -480,6 +491,26 @@ input[type=checkbox]:disabled {
   color: #171819;
   font-size: 1.6rem;
   font-weight: 400;
+}
+.default-form__radio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+.default-form__radio-group {
+  display: flex;
+  align-items: center;
+}
+.default-form__radio-group label {
+  margin: 0;
+  cursor: pointer;
+}
+.default-form__radio-group input {
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 1rem;
 }
 .default-form__password {
   position: relative;
@@ -2075,4 +2106,84 @@ input[type=checkbox]:disabled {
 }
 .profile .order-card-body__right div:not(:last-child) {
   margin-bottom: 2rem;
+}
+
+.checkout {
+  padding: 4rem 0 14rem;
+}
+.checkout .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.checkout__left {
+  width: 39.74%;
+}
+.checkout__title {
+  margin-bottom: 4rem;
+  color: #171819;
+  font-size: 4rem;
+  font-weight: 400;
+}
+.checkout__form {
+  width: 90%;
+}
+.checkout__form .button-dark {
+  margin-top: 3rem;
+}
+.checkout__right {
+  width: 48.38%;
+}
+.checkout__cards {
+  position: relative;
+  padding: 0 2rem;
+  max-height: 48rem;
+  overflow: hidden;
+}
+.checkout__cards::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 42rem;
+  width: 2px;
+  background: #BDBDBD;
+}
+.checkout .horizontal-card__image {
+  width: 34.6%;
+  height: 19rem;
+}
+.checkout__right-info-above {
+  border-top: 1px solid #BDBDBD;
+  border-bottom: 1px solid #BDBDBD;
+  padding: 2.5rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.checkout__right-info-above div {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout__right-info-above div:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+.checkout__right-info-above span {
+  color: #BDBDBD;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.checkout__right-info-below {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.checkout__right-text {
+  color: #171819;
+  font-size: 4rem;
+  font-weight: 100;
+}
+.checkout__right-text_bold {
+  color: #171819;
+  font-size: 2.5rem;
+  font-weight: 600;
 }

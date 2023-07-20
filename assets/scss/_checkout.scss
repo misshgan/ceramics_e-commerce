@@ -1,0 +1,122 @@
+.checkout {
+	padding: 4rem 0 14rem;
+
+	.container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__left {
+		width: 39.74%;
+	}
+
+	&__title {
+		margin-bottom: 4rem;
+
+		color: $color-main;
+		font-size: 4rem;
+		font-weight: 400;
+	}
+
+	&__form {
+		width: 90%;
+
+		.button-dark {
+			margin-top: 3rem;
+		}
+	}
+
+	&__right {
+		width: 48.38%;
+	}
+	&__cards {
+		position: relative;
+		padding: 0 2rem;
+
+		max-height: 48rem;
+		overflow: hidden;
+
+		&::after {
+			position: absolute;
+			content: '';
+			top: 0;
+			right: 0;
+			height: 42rem;
+			width: 2px;
+			background: $color-secondary;
+		}
+	}
+	.horizontal-card {
+	}
+	.horizontal-card__image {
+		width: 34.60%;
+		height: 19rem;
+	}
+	.horizontal-card__body {
+	}
+	.horizontal-card__header {
+	}
+	.horizontal-card__title {
+	}
+	.horizontal-card__price {
+	}
+	.horizontal-card__description {
+	}
+	.horizontal-card__description-item {
+	}
+	.horizontal-card__foter {
+	}
+	.change-amount {
+	}
+	.change-amount__less {
+	}
+	.change-amount__counter {
+	}
+	.change-amount__more {
+	}
+	.horizontal-card__footer-link {
+	}
+	&__right-info {
+	}
+	&__right-info-above {
+		border-top: 1px solid $color-secondary;
+		border-bottom: 1px solid $color-secondary;
+		padding: 2.5rem 0 2rem;
+
+		display: flex;
+		flex-direction: column;
+
+		div {
+			display: flex;
+			justify-content: space-between;
+
+			&:not(:last-child) {
+				margin-bottom: 1.4rem;
+			}
+		}
+
+		span {
+			color: $color-secondary;
+			font-size: 1.8rem;
+			font-weight: 400;
+		}
+	}
+	&__right-info-below {
+		padding-top: 2rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__right-text {
+		color: $color-main;
+		font-size: 4rem;
+		font-weight: 100;
+	}
+	&__right-text_bold {
+		color: $color-main;
+		font-size: 2.5rem;
+		font-weight: 600;
+	}
+
+
+}
