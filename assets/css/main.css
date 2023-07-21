@@ -2187,3 +2187,70 @@ input[type=checkbox]:disabled {
   font-size: 2.5rem;
   font-weight: 600;
 }
+
+.faq {
+  padding: 5rem 0 14rem;
+}
+.faq__title {
+  margin-bottom: 10rem;
+  text-align: center;
+  color: #171819;
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.faq__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.faq__left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+  width: -moz-max-content;
+  width: max-content;
+}
+.faq__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 2rem 2rem 2rem 0;
+  border-bottom: 1px solid #BDBDBD;
+  border-right: 1px solid #BDBDBD;
+}
+.faq__item img {
+  width: 0.8rem;
+}
+.faq__item.active {
+  border-right: none;
+}
+.faq__item-title {
+  margin-right: 17.8rem;
+  color: #BDBDBD;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.faq__item.active > .faq__item-title {
+  color: #171819;
+}
+.faq__right {
+  display: flex;
+  flex-direction: column;
+}
+.faq__right-title {
+  margin-bottom: 4rem;
+  color: #171819;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.faq__right-description {
+  color: #171819;
+  font-size: 1.8rem;
+  font-weight: 400;
+}

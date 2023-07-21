@@ -1,0 +1,73 @@
+.faq {
+	padding: 5rem 0 14rem;
+
+	.container {
+	}
+	&__title {
+		margin-bottom: 10rem;
+
+		text-align: center;
+		color: $color-main;
+		font-size: 4rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	&__main {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&__left {
+		width: 45%;
+		display: flex;
+		flex-direction: column;
+		margin-right: 4rem;
+		width: max-content;
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		width: max-content;
+		padding: 2rem 2rem 2rem 0;
+		border-bottom: 1px solid $color-secondary;
+		border-right: 1px solid $color-secondary;
+
+		img {
+			width: 0.8rem;
+		}
+
+		&.active {
+			border-right: none;
+		}
+	}
+	&__item-title {
+		margin-right: 17.8rem;
+
+		color: $color-secondary;
+		font-size: 1.8rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&__item.active > &__item-title {
+		color: $color-main;
+	}
+	&__right {
+		display: flex;
+		flex-direction: column;
+	}
+	&__right-title {
+		margin-bottom: 4rem;
+
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&__right-description {
+		color: $color-main;
+		font-size: 1.8rem;
+		font-weight: 400;
+	}
+}
