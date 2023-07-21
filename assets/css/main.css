@@ -2254,3 +2254,44 @@ input[type=checkbox]:disabled {
   font-size: 1.8rem;
   font-weight: 400;
 }
+
+.conditions {
+  padding: 5rem 0 14rem;
+}
+.conditions__title {
+  margin: 0;
+  margin-bottom: 10rem;
+  text-align: center;
+  color: #171819;
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.conditions__subtitle {
+  color: #171819;
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+.conditions__main {
+  padding: 4rem 4rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.conditions__item {
+  display: flex;
+  flex-direction: column;
+}
+.conditions__item:not(:last-child) {
+  margin-bottom: 3.3rem;
+}
+.conditions__item-title {
+  margin-bottom: 1.7rem;
+  color: #171819;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.conditions__item-subtitle {
+  color: #171819;
+  font-size: 2.1rem;
+  font-weight: 400;
+}
