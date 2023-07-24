@@ -7,7 +7,8 @@
 
 	&__main {
 		display: grid;
-		grid-template-columns: 8.06% 41.93% 41.93%;
+		// grid-template-columns: 8.06% 41.93% 41.93%;
+		display: flex;
 		justify-content: space-between;
 		height: 52rem;
 	}
@@ -15,11 +16,12 @@
 		display: flex;
 		flex-direction: column;
 		overflow: hidden;
+		width: 10.06%;
 
-		max-height: 52rem;
+		// max-height: 52rem;
 	}
 	&__miniature {
-		width: 100%;
+		min-width: 10rem;
 		min-height: 10rem;
 		object-fit: cover;
 		overflow: hidden;
@@ -47,7 +49,8 @@
 		border-radius: 8px;
 		overflow: hidden;
 		border: 1px solid $color-main;
-		height: 52rem;
+		// height: 52rem;
+		width: 41.93%;
 
 		img {
 			width: 100%;
@@ -117,7 +120,7 @@
 		margin: 0;
 	
 		color: $color-main;
-		font-size: 40px;
+		font-size: 4rem;
 		font-weight: 600;
 		text-transform: uppercase;
 	}
@@ -133,8 +136,8 @@
 	border: 1px solid $color-main;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-	height: 52rem;
-
+	// height: 52rem;
+	width: 41.93%;
 
 	&__header {
 		display: flex;
@@ -186,6 +189,11 @@
 		&.active {
 			border-color: $color-main;
 		}
+
+		@media (max-width:1024px) {
+			width: 2.6rem;
+			height: 2.6rem;
+		}
 	}
 	&__size {
 		margin: 2rem 0 4rem;
@@ -233,10 +241,15 @@
 			font-size: 1.6rem;
 			font-weight: 400;
 		}
+
+		@media (max-width:1024px) {
+			margin-bottom: 2rem;
+		}
 	}
 	
 	&__amount {
 		margin-bottom: 4rem;
+		margin-top: auto;
 
 		color: $color-main;
 		font-size: 1.8rem;
@@ -244,6 +257,10 @@
 
 		div {
 			margin-top: 1rem;
+		}
+
+		@media (max-width:1024px) {
+			margin-bottom: 3rem;
 		}
 	}
 	&__footer {

@@ -1,3 +1,78 @@
+@mixin respond($breakpoint) {
+	@if $breakpoint ==500px {
+		@media only screen and (max-width: 31.2em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==600px {
+		@media only screen and (max-width: 37.5em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==700px {
+		@media only screen and (max-width:  43.7em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==800px {
+		@media only screen and (max-width:  50em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==900px {
+		@media only screen and (max-width: 56.25em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==1000px {
+		@media only screen and (max-width: 62.5em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==1024px {
+		@media only screen and (max-width: 64em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==1200px {
+		@media only screen and (max-width: 75em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==big-desktop {
+		@media only screen and (min-width: 112.5em) {
+			// 1800px
+			@content
+		}
+
+		;
+	}
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -8,13 +83,13 @@ html {
 	// This defines what 1 rem is 
 	font-size: 62.5% !important; // 1rem = 10px; 10px/16px = 62.5%
 
-	// @include respond(1200px) {
-	// 	font-size: 56.25% !important; // 1 rem = 9 px; 9/16px = 56.25%
-	// }
+	@include respond(1200px) {
+		font-size: 56.25% !important; // 1 rem = 9 px; 9/16px = 56.25%
+	}
 
-	// @include respond(1000px) {
-	// 	font-size: 50% !important; // 1 rem = 8px; 8/16px = 50% 
-	// }
+	@include respond(1024px) {
+		font-size: 48% !important; // 1 rem = 8px; 8/16px = 50% 
+	}
 
 	// @include respond(900px) {
 	// 	font-size: 43% !important; // 1 rem = 7px; 7/16 = 43%
@@ -45,6 +120,11 @@ $color-secondary: #BDBDBD;
 	padding-left: 3rem;
 	padding-right: 3rem;
 	margin: 0 auto;
+
+	@media (max-width:1024px) {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 }
 
 /* ARROW DOWN */ 
@@ -448,7 +528,13 @@ input[type="checkbox"]:disabled {
 	}
 
 	&__image {
-		width: 23.52%;
+		width: 23rem;
+		height: 23rem;
+
+		@media (max-width:1024px) {
+			width: 21rem;
+			height: 21rem;
+		}
 	}
 	&__body {
 		width: 100%;
@@ -479,6 +565,12 @@ input[type="checkbox"]:disabled {
 
 		&:not(:last-child) {
 			margin-bottom: 1rem;
+		}
+
+		&:last-child {
+			@media (max-width:1024px) {
+				display: none;
+			}
 		}
 	}
 	&__foter {
@@ -536,6 +628,23 @@ input[type="checkbox"]:disabled {
 	&__item {
 		display: flex;
 		flex-direction: column;
+
+		&.comment textarea {
+			resize: none;
+
+			border-radius: 0;
+			border: 1px solid $color-secondary;
+			padding: 1rem;
+
+			color: $color-main;
+			font-size: 1.6rem;
+			font-weight: 400;
+
+			&:active, &:focus {
+				outline: none;
+				border-color: $color-main;
+			}
+		}
 
 		&:not(:last-child) {
 			margin-bottom: 2rem;

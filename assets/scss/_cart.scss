@@ -44,6 +44,7 @@
 
 	}
 	&__promocode-input {
+		width: 100%;
 		padding: 0.8rem 3.4rem 0.8rem 1.4rem;
 		margin-bottom: 1rem;
 		border: 1px solid $color-secondary;
@@ -70,7 +71,7 @@
 		align-items: center;
 		justify-content: center;
 
-		width: 3.4rem;
+		width: 4rem;
 		height: 3.64rem;
 
 		border: 1px solid $color-secondary;

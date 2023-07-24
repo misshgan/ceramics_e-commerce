@@ -28,7 +28,7 @@
 	}
 
 	&__right {
-		width: 48.38%;
+		width: 52%;
 	}
 	&__cards {
 		position: relative;
@@ -50,8 +50,8 @@
 	.horizontal-card {
 	}
 	.horizontal-card__image {
-		width: 34.60%;
-		height: 19rem;
+		width: 20rem;
+		height: 20rem;
 	}
 	.horizontal-card__body {
 	}
@@ -64,6 +64,9 @@
 	.horizontal-card__description {
 	}
 	.horizontal-card__description-item {
+		&:last-child {
+			display: block;
+		}
 	}
 	.horizontal-card__foter {
 	}

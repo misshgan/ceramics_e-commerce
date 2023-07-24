@@ -1,6 +1,10 @@
 .gratitude {
 	padding: 4rem 0 14rem;
 
+	@media (max-width:1024px) {
+		padding: 4rem 0 4rem;
+	}
+
 	.container {
 	}
 	&__image {
